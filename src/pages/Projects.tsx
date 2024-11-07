@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 export default function Projects() {
   // TODO: Create a card component to display each project
   // TODO: Decide whether to make a full page for each project or just show the cards and append a link to the deployed project.
@@ -17,9 +16,9 @@ export default function Projects() {
       <div>
         {projects.map((project, index) => {
           return (
-            <Link key={index} to={`/projects/${project.id}`}>
-              Project {project.name}
-            </Link>
+            <article key={index}>
+              <h3>Project {project.name}</h3>
+            </article>
           );
         })}
       </div>
