@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Squash as Hamburger } from "hamburger-react";
 import Sidebar from "./SideBar";
-import NavItem from "./NavItem";
 //TODO
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -12,10 +11,10 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 flex select-none items-center justify-between gap-4 bg-black px-4 py-4 text-white shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] xl:px-10">
+    <nav className="sticky top-0 z-50 flex select-none items-center justify-between gap-4 bg-black px-4 py-4 text-white shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] lg:px-6 xl:px-10">
       <Link className="rounded-sm shadow-[0_0_0_2px_rgba(255,255,255)]" to="/">
-        <div className="flex items-center justify-between px-5">
-          <span className="mb-1 text-center text-5xl font-normal tracking-[-4px] xl:text-6xl">
+        <div className="flex items-center justify-between px-4">
+          <span className="mb-1 text-center text-5xl font-normal tracking-tight xl:text-6xl">
             V V
           </span>
         </div>
@@ -32,11 +31,17 @@ export default function NavBar() {
       )}
       <ul className="hidden items-center gap-4 xl:flex">
         <li>
-          <NavItem title="Home" url="/" />
+          <NavLink className="group relative p-3" to="/">
+            Home
+            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100" />
+          </NavLink>
         </li>
         <hr className="h-4 w-px bg-white" />
         <li>
-          <NavItem title="Projects" url="/projects" />
+          <NavLink className="group relative p-3" to="/projects">
+            Projects
+            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100" />
+          </NavLink>
         </li>
         <hr className="h-4 w-px bg-white" />
         <li>
@@ -52,6 +57,7 @@ export default function NavBar() {
         </li>
         <hr className="h-4 w-px bg-white" />
         <li>
+          {/* TODO: Make contact link work on all subpages. Right now it only works on the Home Page */}
           <a className="group relative p-3" href="#contact">
             Contact
             <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100" />
