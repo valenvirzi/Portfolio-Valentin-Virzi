@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Squash as Hamburger } from "hamburger-react";
 import Sidebar from "./SideBar";
-//TODO
-export default function NavBar() {
+
+const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleToggleMenu = () => {
@@ -11,7 +11,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 flex select-none items-center justify-between gap-4 bg-black px-4 py-4 text-white shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] lg:px-6 xl:px-10">
+    <nav className="sticky top-0 z-50 flex select-none items-center justify-between gap-4 bg-black px-4 py-4 text-white shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] lg:px-6 xl:px-10 2xl:px-14">
       <Link className="rounded-sm shadow-[0_0_0_2px_rgba(255,255,255)]" to="/">
         <div className="flex items-center justify-between px-4">
           <span className="mb-1 text-center text-5xl font-normal tracking-tight xl:text-6xl">
@@ -66,4 +66,6 @@ export default function NavBar() {
       </ul>
     </nav>
   );
-}
+};
+
+export default NavBar;
