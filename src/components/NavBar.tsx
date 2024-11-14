@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
         </div>
       </Link>
       <button className="z-50 xl:hidden" type="button">
-        <Hamburger rounded onToggle={handleToggleMenu} />
+        <Hamburger rounded toggled={isMenuOpen} onToggle={handleToggleMenu} />
       </button>
       <Sidebar isMenuOpen={isMenuOpen} />
       {isMenuOpen && (
@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
           className="fixed inset-0 z-10 bg-black bg-opacity-35"
         />
       )}
-      <ul className="hidden items-center gap-4 xl:flex">
+      <ul className="hidden items-center gap-4 xl:flex 2xl:text-lg">
         <li>
           <NavLink className="group relative p-3" to="/">
             Home
