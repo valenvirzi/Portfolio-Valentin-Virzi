@@ -5,7 +5,7 @@ export default function HomePage() {
   //TODO
   return (
     <main className="flex flex-col">
-      <section className="relative bg-black bg-[url('./code.avif')] bg-cover bg-no-repeat px-4 py-6 text-white md:bg-contain md:bg-right-top lg:px-6 lg:py-8 xl:px-10 2xl:px-14 2xl:py-10">
+      <section className="relative bg-black bg-[url('./code.avif')] bg-cover bg-no-repeat px-6 py-6 text-white md:bg-contain md:bg-right-top lg:px-8 lg:py-10 xl:px-12 2xl:px-14 2xl:py-10">
         <div className="absolute inset-0 bg-black opacity-75"></div>
         <div className="relative z-10 flex flex-col gap-4 lg:gap-6 2xl:gap-10">
           <h1 className="text-3xl font-bold lg:text-5xl 2xl:text-7xl">
@@ -39,9 +39,54 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center gap-6 px-4 py-6 lg:px-6 xl:px-10">
+      <section className="flex flex-col items-center gap-6 px-4 py-6 lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
         <h2 className="text-2xl font-bold">Some of my Projects</h2>
         <ProjectsContainer />
+      </section>
+      <section className="flex flex-col gap-6 bg-black px-6 py-6 text-white lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
+        <h2 className="self-center text-2xl font-bold">About Me</h2>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4 text-pretty">
+            <h4 className="text-xl">Hey, I'm Valentin!</h4>
+            <p>
+              I crossed paths with the world of coding thanks to my
+              tech-enthusiast friends. Once I started making my own apps, I got
+              hooked! The amount of cool stuff one can create with just a bit of
+              code completely blew my mind.
+            </p>
+            <p>
+              I have always been all about learning new things. That's why,
+              besides being certified in personal training and studying Web
+              Development at college, I've been also brushing up on my English
+              since I was a little kid. Bagged a Cambridge B2 certificate along
+              the way to prove it!
+            </p>
+            <p>
+              Hope I can join you soon and start building great things together!
+            </p>
+          </div>
+          <div className="flex flex-col gap-4">
+            {/* TODO: Continue designing the skills layout */}
+            <h3 className="self-center text-xl">My Skills</h3>
+            <div className="grid gap-2">
+              <article className="flex max-w-fit items-center rounded bg-white p-2 text-black">
+                HTML
+              </article>
+              <article className="flex max-w-fit items-center rounded bg-white p-2 text-black">
+                HTML
+              </article>
+              <article className="flex max-w-fit items-center rounded bg-white p-2 text-black">
+                HTML
+              </article>
+              <article className="flex max-w-fit items-center rounded bg-white p-2 text-black">
+                HTML
+              </article>
+              <article className="flex max-w-fit items-center rounded bg-white p-2 text-black">
+                HTML
+              </article>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

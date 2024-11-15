@@ -1,7 +1,17 @@
 import ProjectCard from "./ProjectCard";
 import { Project } from "../types/types";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProjectsContainer: React.FC = () => {
+  const [visibleProjects, setVisibleProjects] = useState<number>(3);
+
+  const handleViewMore = () => {
+    if (visibleProjects < 6) {
+      setVisibleProjects(6);
+    }
+  };
+
   const projectList: Project[] = [
     {
       id: "1",
@@ -30,6 +40,24 @@ const ProjectsContainer: React.FC = () => {
       githubLink: "https://github.com/username/recipe-finder",
       deployLink: "https://recipe-finder.example.com",
     },
+    {
+      id: "4",
+      title: "Crypto Tracker",
+      description:
+        "A sleek web application that provides real-time cryptocurrency prices, market trends, and a personalized watchlist.",
+      imgURL: "https://example.com/crypto-tracker-image.jpg",
+      githubLink: "https://github.com/username/crypto-tracker",
+      deployLink: "https://crypto-tracker.example.com",
+    },
+    {
+      id: "5",
+      title: "E-Commerce Store",
+      description:
+        "A fully functional e-commerce platform with product filtering, a shopping cart, and secure checkout integration.",
+      imgURL: "https://example.com/e-commerce-store-image.jpg",
+      githubLink: "https://github.com/username/e-commerce-store",
+      deployLink: "https://ecommerce-store.example.com",
+    },
   ];
   {
     /*
@@ -40,9 +68,27 @@ const ProjectsContainer: React.FC = () => {
   }
   return (
     <div className="grid gap-4">
-      {projectList.map((project) => {
+      {projectList.slice(0, visibleProjects).map((project) => {
         return <ProjectCard key={project.id} project={project} />;
       })}
+      <div className="col-span-full flex items-center justify-center">
+        {visibleProjects <= 3 ? (
+          <button
+            onPointerDown={handleViewMore}
+            className="rounded bg-[#fb8500] px-6 py-3 text-center text-black max-md:w-full lg:px-8"
+            type="button"
+          >
+            See more
+          </button>
+        ) : (
+          <Link
+            className="rounded bg-[#fb8500] px-6 py-3 text-center text-black max-md:w-full lg:px-8"
+            to="/projects"
+          >
+            See all
+          </Link>
+        )}
+      </div>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     */
   }
   return (
-    <article className="flex flex-col overflow-hidden rounded-sm bg-gray-300">
+    <article className="flex flex-col overflow-hidden rounded bg-gray-300">
       <div className="flex flex-col gap-4 p-5 pb-0">
         <h3 className="text-lg font-semibold">{project.title}</h3>
         <p>{project.description}</p>
