@@ -60,11 +60,7 @@ const ProjectsContainer: React.FC = () => {
     },
   ];
   {
-    /*
-        TODO: Make the container fetch the project list from a database and then render each project.
-        TODO: Put a limit to the number of projects rendered and a button to show more followed by a link to see all projects on a separate page.
-    
-        */
+    /* TODO: Make the container fetch the project list from a database and then render each project. */
   }
   return (
     <div className="flex flex-col gap-4 xl:w-full xl:gap-6">

@@ -3,7 +3,6 @@ import ProjectsContainer from "../components/ProjectsContainer";
 import SkillsContainer from "../components/SkillsContainer";
 
 export default function HomePage() {
-  //TODO
   return (
     <main className="flex flex-col">
       <section className="relative bg-black bg-[url('./code.avif')] bg-cover bg-no-repeat px-6 py-6 text-white md:bg-contain md:bg-right-top lg:px-8 lg:py-10 xl:px-12 2xl:px-14 2xl:py-10">
@@ -53,6 +52,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="flex flex-col gap-6 px-6 py-6 lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
+        {/* TODO: Design this section for bigger screens */}
         <h2 className="self-center text-2xl font-bold lg:text-3xl">About Me</h2>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4 text-pretty">

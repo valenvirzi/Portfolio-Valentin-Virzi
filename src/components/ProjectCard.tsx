@@ -5,18 +5,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  // TODO: Design Project Card
-  {
-    /*
-    TODO: Make it take following Props: 
-    - Name
-    - Description
-    - Link to GitHub Repository
-    - Link to Deployed Project
-    - Preview img
-
-    */
-  }
   return (
     <article className="flex flex-col gap-3 overflow-hidden rounded bg-white pb-4 shadow-[0px_3px_6px_0_rgba(0,0,0,0.24)] md:max-w-sm 2xl:max-w-xs">
       <img
