@@ -6,3 +6,9 @@ export interface Project {
   githubLink: string;
   deployLink: string | undefined;
 }
+
+export interface Skill {
+  id: string;
+  name: string;
+  svgURL: string;
+}

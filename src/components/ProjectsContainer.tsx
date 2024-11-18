@@ -67,11 +67,13 @@ const ProjectsContainer: React.FC = () => {
         */
   }
   return (
-    <div className="grid gap-4">
-      {projectList.slice(0, visibleProjects).map((project) => {
-        return <ProjectCard key={project.id} project={project} />;
-      })}
-      <div className="col-span-full flex items-center justify-center">
+    <div className="flex flex-col gap-4 xl:w-full xl:gap-6">
+      <div className="grid gap-4 lg:flex lg:flex-wrap lg:justify-center xl:gap-6">
+        {projectList.slice(0, visibleProjects).map((project) => {
+          return <ProjectCard key={project.id} project={project} />;
+        })}
+      </div>
+      <div className="flex items-center justify-center">
         {visibleProjects <= 3 ? (
           <button
             onPointerDown={handleViewMore}

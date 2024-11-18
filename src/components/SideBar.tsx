@@ -7,7 +7,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen }) => {
   return (
     <div
-      className={`fixed inset-y-0 right-0 transform ${
+      className={`fixed inset-y-0 right-0 transform xl:hidden ${
         isMenuOpen
           ? "translate-x-0 shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)]"
           : "translate-x-full"
