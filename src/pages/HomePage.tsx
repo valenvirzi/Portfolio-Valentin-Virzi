@@ -49,10 +49,8 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold lg:text-3xl">Some of my Projects</h2>
         <ProjectsContainer />
       </section>
-      <section
-        id="skills"
-        className="flex flex-col gap-6 bg-black px-6 py-6 text-white lg:px-8 lg:py-10 xl:px-12 2xl:px-14"
-      >
+      <div id="skills" className="relative bottom-20"></div>
+      <section className="flex flex-col gap-6 bg-black px-6 py-6 text-white lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
         <div className="flex flex-col gap-4">
           <h3 className="self-center text-2xl font-semibold lg:text-3xl">
             My Skills
