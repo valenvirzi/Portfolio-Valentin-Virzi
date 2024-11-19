@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { Project } from "../types/types";
 import { useState } from "react";
@@ -65,9 +66,17 @@ const ProjectsContainer: React.FC = () => {
   return (
     <div className="flex flex-col gap-4 xl:w-full xl:gap-6">
       <div className="grid gap-4 lg:flex lg:flex-wrap lg:justify-center xl:gap-6">
-        {projectList.slice(0, visibleProjects).map((project) => {
-          return <ProjectCard key={project.id} project={project} />;
-        })}
+        {projectList.slice(0, visibleProjects).map((project, index) => (
+          <motion.div
+            key={project.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex"
+            transition={{ delay: index * 0.1, duration: 0.5 }}
+          >
+            <ProjectCard project={project} />
+          </motion.div>
+        ))}
       </div>
       <div className="flex items-center justify-center">
         {visibleProjects <= 3 ? (

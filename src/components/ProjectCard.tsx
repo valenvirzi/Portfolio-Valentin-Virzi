@@ -6,7 +6,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <article className="flex flex-col gap-3 overflow-hidden rounded bg-white pb-4 shadow-[0px_3px_6px_0_rgba(0,0,0,0.24)] md:max-w-sm 2xl:max-w-xs">
+    <article className="flex flex-col gap-3 overflow-hidden rounded bg-white pb-4 shadow-[0px_3px_6px_0_rgba(0,0,0,0.24)] md:max-w-sm lg:max-w-xs">
       <img
         src="https://images.unsplash.com/photo-1566241477600-ac026ad43874?q=80&w=2046&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt=""
@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
         <div className="flex items-center justify-between gap-2 px-4 text-sm 2xl:text-base">
           <a
-            className="rounded bg-[#fb8500] px-4 py-2 text-black lg:px-8 2xl:px-4"
+            className="rounded bg-[#fb8500] px-4 py-2 text-black"
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             GitHub Code
           </a>
           <a
-            className="rounded border bg-white px-4 py-2 text-black lg:px-8 2xl:px-4"
+            className="rounded border bg-white px-4 py-2 text-black"
             href={project.deployLink}
             target="_blank"
             rel="noopener noreferrer"

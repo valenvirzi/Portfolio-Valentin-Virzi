@@ -14,9 +14,15 @@ export default function HomePage() {
           {/* TODO: Make the "and more" text be a link to the about section where I list my tech stack. */}
           <p className="text-base lg:text-lg 2xl:text-xl">
             Frontend Developer proficient in ReactJS, TypeScript and tools such
-            as Tailwind, Git and more. With a keen eye for design, I can deliver
-            responsive, user-friendly interfaces and engaging digital
-            experiences.
+            as Tailwind, Git{" "}
+            <a
+              className="text-[#fb8500] underline underline-offset-4"
+              href="#skills"
+            >
+              and more
+            </a>
+            . With a keen eye for design, I can deliver responsive,
+            user-friendly interfaces and engaging digital experiences.
           </p>
           <p className="text-base lg:text-lg 2xl:text-xl">
             Let's bring new solutions to life.
@@ -43,7 +49,10 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold lg:text-3xl">Some of my Projects</h2>
         <ProjectsContainer />
       </section>
-      <section className="flex flex-col gap-6 bg-black px-6 py-6 text-white lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
+      <section
+        id="skills"
+        className="flex flex-col gap-6 bg-black px-6 py-6 text-white lg:px-8 lg:py-10 xl:px-12 2xl:px-14"
+      >
         <div className="flex flex-col gap-4">
           <h3 className="self-center text-2xl font-semibold lg:text-3xl">
             My Skills

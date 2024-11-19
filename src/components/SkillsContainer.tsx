@@ -49,6 +49,8 @@ const SkillsContainer: React.FC = () => {
       svgURL: "sass",
     },
   ];
+
+  //TODO Make the icons be colored on hover
   return (
     <div className="flex flex-wrap justify-center gap-2 py-2 md:px-2 lg:gap-3">
       {skillsList.map((skill) => {
