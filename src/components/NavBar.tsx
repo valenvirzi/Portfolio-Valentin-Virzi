@@ -11,11 +11,8 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 flex select-none items-center justify-between gap-4 bg-black px-4 py-4 text-white shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] lg:px-6 xl:px-10 2xl:px-14">
-      <Link
-        className="w-fit rounded-sm shadow-[0_0_0_2px_rgba(255,255,255)]"
-        to="/"
-      >
+    <nav className="sticky top-0 z-50 flex select-none items-center justify-between gap-4 bg-[#003049] px-4 py-4 text-[#FDF0D5] shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] lg:px-6 xl:px-10 2xl:px-14">
+      <Link className="w-fit rounded-sm shadow-[0_0_0_2px_#FDF0D5]" to="/">
         <div className="flex items-center justify-between px-4">
           <span className="mb-1 text-center text-5xl font-normal tracking-tight xl:text-6xl">
             V V
@@ -36,17 +33,17 @@ const NavBar: React.FC = () => {
         <li>
           <NavLink className="group relative p-3" to="/">
             Home
-            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100" />
+            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />
           </NavLink>
         </li>
-        <hr className="h-4 w-px bg-white" />
+        <hr className="h-4 w-px bg-[#FDF0D5]" />
         <li>
           <NavLink className="group relative p-3" to="/projects">
             Projects
-            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100" />
+            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />
           </NavLink>
         </li>
-        <hr className="h-4 w-px bg-white" />
+        <hr className="h-4 w-px bg-[#FDF0D5]" />
         <li>
           <a
             className="group relative p-3"
@@ -55,15 +52,15 @@ const NavBar: React.FC = () => {
             rel="noopener noreferrer"
           >
             Resume
-            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100" />
+            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />
           </a>
         </li>
-        <hr className="h-4 w-px bg-white" />
+        <hr className="h-4 w-px bg-[#FDF0D5]" />
         <li>
           {/* TODO: Make contact link work on all subpages. Right now it only works on the Home Page */}
           <a className="group relative p-3" href="#contact">
             Contact
-            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100" />
+            <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />
           </a>
         </li>
       </ul>

@@ -5,8 +5,8 @@ import SkillsContainer from "../components/SkillsContainer";
 export default function HomePage() {
   return (
     <main className="flex flex-col">
-      <section className="relative bg-black bg-[url('./code.avif')] bg-cover bg-no-repeat px-6 py-6 text-white md:bg-contain md:bg-right-top lg:px-8 lg:py-10 xl:px-12 2xl:px-14 2xl:py-10">
-        <div className="absolute inset-0 bg-black opacity-75"></div>
+      <section className="relative bg-black bg-[url('./code.avif')] bg-cover bg-no-repeat px-6 py-6 text-[#FDF0D5] md:bg-contain md:bg-right-top lg:px-8 lg:py-10 xl:px-12 2xl:px-14 2xl:py-10">
+        <div className="absolute inset-0 bg-[#003049] opacity-75"></div>
         <div className="relative z-10 flex flex-col gap-4 lg:gap-6 2xl:gap-10">
           <h1 className="text-3xl font-semibold lg:text-5xl 2xl:text-7xl">
             VALENTIN VIRZI
@@ -15,10 +15,7 @@ export default function HomePage() {
           <p className="text-base lg:text-lg 2xl:text-xl">
             Frontend Developer proficient in ReactJS, TypeScript and tools such
             as Tailwind, Git{" "}
-            <a
-              className="text-[#fb8500] underline underline-offset-4"
-              href="#skills"
-            >
+            <a className="underline underline-offset-4" href="#skills">
               and more
             </a>
             . With a keen eye for design, I can deliver responsive,
@@ -29,13 +26,13 @@ export default function HomePage() {
           </p>
           <div className="mt-2 flex items-center gap-4 max-md:justify-between lg:gap-6 lg:text-lg">
             <Link
-              className="rounded bg-[#fb8500] px-6 py-3 text-center text-black max-md:w-full lg:px-8"
+              className="rounded bg-[#C1121F] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#780000] max-md:w-full lg:px-8"
               to={"/projects"}
             >
               Projects
             </Link>
             <a
-              className="rounded bg-white px-6 py-3 text-center text-black max-md:w-full lg:px-8"
+              className="rounded bg-[#780000] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#C1121F] max-md:w-full lg:px-8"
               href="https://drive.google.com/file/d/1Iiors2L5HU9xHhLC5d0DhUeQzdpsFS0K/view"
               target="_blank"
               rel="noopener noreferrer"
@@ -45,12 +42,14 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center gap-6 bg-gray-200 px-4 py-6 lg:gap-8 lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
-        <h2 className="text-2xl font-bold lg:text-3xl">Some of my Projects</h2>
+      <section className="flex flex-col items-center gap-6 bg-[#669BBC] px-4 py-6 lg:gap-8 lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
+        <h2 className="text-2xl font-bold text-[#FDF0D5] lg:text-3xl">
+          Some of my Projects
+        </h2>
         <ProjectsContainer />
       </section>
       <div id="skills" className="relative bottom-20"></div>
-      <section className="flex flex-col gap-6 bg-black px-6 py-6 text-white lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
+      <section className="flex flex-col gap-6 bg-[#003049] px-6 py-6 text-[#FDF0D5] lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
         <div className="flex flex-col gap-4">
           <h3 className="self-center text-2xl font-semibold lg:text-3xl">
             My Skills
@@ -58,7 +57,7 @@ export default function HomePage() {
           <SkillsContainer />
         </div>
       </section>
-      <section className="flex flex-col gap-6 px-6 py-6 lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
+      <section className="flex flex-col gap-6 bg-[#669BBC] px-6 py-6 text-[#FDF0D5] lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
         {/* TODO: Design this section for bigger screens */}
         {/* TODO: Put a photo of myself in the About Me section, that would solve the design for bigger screens */}
         <h2 className="self-center text-2xl font-bold lg:text-3xl">About Me</h2>

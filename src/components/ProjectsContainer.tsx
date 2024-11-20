@@ -82,14 +82,14 @@ const ProjectsContainer: React.FC = () => {
         {visibleProjects <= 3 ? (
           <button
             onPointerDown={handleViewMore}
-            className="rounded bg-[#fb8500] px-6 py-3 text-center text-black max-md:w-full lg:px-8"
+            className="rounded bg-[#C1121F] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#780000] max-md:w-full lg:px-8"
             type="button"
           >
             See more
           </button>
         ) : (
           <Link
-            className="rounded bg-[#fb8500] px-6 py-3 text-center text-black max-md:w-full lg:px-8"
+            className="rounded bg-[#C1121F] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#780000] max-md:w-full lg:px-8"
             to="/projects"
           >
             See all
