@@ -15,7 +15,10 @@ export default function HomePage() {
           <p className="text-base lg:text-lg 2xl:text-xl">
             Frontend Developer proficient in ReactJS, TypeScript and tools such
             as Tailwind, Git{" "}
-            <a className="underline underline-offset-4" href="#skills">
+            <a
+              className="text-[#C1121F] underline underline-offset-4"
+              href="#skills"
+            >
               and more
             </a>
             . With a keen eye for design, I can deliver responsive,
@@ -62,7 +65,7 @@ export default function HomePage() {
         {/* TODO: Put a photo of myself in the About Me section, that would solve the design for bigger screens */}
         <h2 className="self-center text-2xl font-bold lg:text-3xl">About Me</h2>
         <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-4 text-pretty">
+          <div className="flex flex-col gap-4 text-pretty font-semibold">
             <h4 className="text-xl lg:text-2xl">Hey, I'm Valentin!</h4>
             <p className="lg:text-lg">
               I crossed paths with the world of coding thanks to my
@@ -74,8 +77,16 @@ export default function HomePage() {
               I have always been all about learning new things. That's why,
               besides being certified in personal training and studying Web
               Development at college, I've been also brushing up on my English
-              since I was a little kid. Bagged a Cambridge B2 certificate along
-              the way to prove it!
+              since I was a little kid. Bagged a{" "}
+              <a
+                className="underline underline-offset-4"
+                href="https://drive.google.com/file/d/1Iiors2L5HU9xHhLC5d0DhUeQzdpsFS0K/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cambridge B2 certificate
+              </a>{" "}
+              along the way to prove it!
             </p>
             <p className="lg:text-lg">
               Hope I can join you soon and start building great things together!
