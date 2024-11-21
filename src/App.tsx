@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="app flex flex-col">
+    <div className="app flex min-h-screen flex-col">
       <NavBar />
       <Outlet />
       <Footer />

@@ -4,8 +4,15 @@ import { Project } from "../types/types";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const ProjectsContainer: React.FC = () => {
-  const [visibleProjects, setVisibleProjects] = useState<number>(3);
+interface ProjectsContainerProps {
+  renderAll?: boolean;
+}
+const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
+  renderAll = false,
+}) => {
+  const [visibleProjects, setVisibleProjects] = useState<number>(
+    renderAll ? 100 : 3,
+  );
 
   const handleViewMore = () => {
     if (visibleProjects < 6) {
@@ -78,24 +85,28 @@ const ProjectsContainer: React.FC = () => {
           </motion.div>
         ))}
       </div>
-      <div className="flex items-center justify-center">
-        {visibleProjects <= 3 ? (
-          <button
-            onPointerDown={handleViewMore}
-            className="rounded bg-[#C1121F] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#780000] max-md:w-full lg:px-8"
-            type="button"
-          >
-            See more
-          </button>
-        ) : (
-          <Link
-            className="rounded bg-[#C1121F] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#780000] max-md:w-full lg:px-8"
-            to="/projects"
-          >
-            See all
-          </Link>
-        )}
-      </div>
+      {renderAll ? (
+        <></>
+      ) : (
+        <div className="flex items-center justify-center">
+          {visibleProjects <= 3 ? (
+            <button
+              onPointerDown={handleViewMore}
+              className="rounded bg-[#C1121F] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#780000] max-md:w-full lg:px-8"
+              type="button"
+            >
+              See more
+            </button>
+          ) : (
+            <Link
+              className="rounded bg-[#C1121F] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#780000] max-md:w-full lg:px-8"
+              to="/projects"
+            >
+              See all
+            </Link>
+          )}
+        </div>
+      )}
     </div>
   );
 };

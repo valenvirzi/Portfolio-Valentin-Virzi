@@ -11,7 +11,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen }) => {
         isMenuOpen
           ? "translate-x-0 shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)]"
           : "translate-x-full"
-      } z-20 w-64 bg-black text-white transition-transform duration-300 ease-in-out`}
+      } z-20 w-64 bg-[#003049] text-[#FDF0D5] transition-transform duration-300 ease-in-out`}
     >
       <nav className="mt-20">
         <ul className="flex flex-col gap-1">
@@ -20,13 +20,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen }) => {
               Home
             </NavLink>
           </li>
-          <hr className="ml-10 h-px w-1/12 bg-white" />
+          <hr className="ml-10 h-px w-1/12 bg-[#FDF0D5]" />
           <li className="flex">
             <NavLink className="w-full p-4 pl-10" to={`/projects`}>
               Projects
             </NavLink>
           </li>
-          <hr className="ml-10 h-px w-1/12 bg-white" />
+          <hr className="ml-10 h-px w-1/12 bg-[#FDF0D5]" />
           <li className="flex">
             <a
               className="w-full p-4 pl-10"
@@ -37,7 +37,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen }) => {
               Resume
             </a>
           </li>
-          <hr className="ml-10 h-px w-1/12 bg-white" />
+          <hr className="ml-10 h-px w-1/12 bg-[#FDF0D5]" />
           <li className="flex">
             <a className="w-full p-4 pl-10" href="#contact">
               Contact
