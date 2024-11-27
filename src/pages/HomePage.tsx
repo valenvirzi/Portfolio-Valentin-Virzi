@@ -15,10 +15,7 @@ export default function HomePage() {
           <p className="text-base lg:text-lg 2xl:text-xl">
             Frontend Developer proficient in ReactJS, TypeScript and tools such
             as Tailwind, Git{" "}
-            <a
-              className="text-[#C1121F] underline underline-offset-4"
-              href="#skills"
-            >
+            <a className="underline underline-offset-4" href="#skills">
               and more
             </a>
             . With a keen eye for design, I can deliver responsive,

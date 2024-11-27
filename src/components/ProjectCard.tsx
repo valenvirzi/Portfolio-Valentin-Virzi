@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
         <div className="flex items-center justify-between gap-2 px-4 text-sm 2xl:text-base">
           <a
-            className="rounded bg-[#C1121F] px-4 py-2 text-[#FDF0D5] hover:bg-[#780000]"
+            className="rounded bg-[#C1121F] px-3 py-2 text-[#FDF0D5] hover:bg-[#780000] md:px-4"
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             GitHub Code
           </a>
           <a
-            className="rounded bg-[#780000] px-4 py-2 text-[#FDF0D5] hover:bg-[#C1121F]"
+            className="rounded bg-[#780000] px-3 py-2 text-[#FDF0D5] hover:bg-[#C1121F] md:px-4"
             href={project.deployLink}
             target="_blank"
             rel="noopener noreferrer"
