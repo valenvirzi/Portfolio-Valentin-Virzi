@@ -41,8 +41,8 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
         },
       ],
       imgURL: "https://example.com/weather-app-image.jpg",
-      githubLink: "https://github.com/username/weather-app",
-      deployLink: "https://weather-app.example.com",
+      githubLink: "https://github.com/valenvirzi/weather-app",
+      deployLink: "https://weather-app-valentin-virzi.vercel.app",
     },
     // {
     //   id: "2",
