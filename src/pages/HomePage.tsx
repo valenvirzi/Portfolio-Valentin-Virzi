@@ -43,7 +43,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="flex flex-col items-center gap-6 bg-[#669BBC] px-4 py-6 lg:gap-8 lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
-        <h2 className="text-2xl font-bold text-[#FDF0D5] lg:text-3xl">
+        <h2 className="text-2xl font-bold text-[#FDF0D5] md:text-3xl">
           Some of my Projects
         </h2>
         <ProjectsContainer />
@@ -51,7 +51,7 @@ export default function HomePage() {
       <div id="skills" className="relative bottom-20"></div>
       <section className="flex flex-col gap-6 bg-[#003049] px-6 py-6 text-[#FDF0D5] lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
         <div className="flex flex-col gap-4">
-          <h3 className="self-center text-2xl font-semibold lg:text-3xl">
+          <h3 className="self-center text-2xl font-semibold md:text-3xl">
             My Skills
           </h3>
           <SkillsContainer />
@@ -60,7 +60,7 @@ export default function HomePage() {
       <section className="flex flex-col gap-6 bg-[#669BBC] px-6 py-6 text-[#FDF0D5] lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
         {/* TODO: Design this section for bigger screens */}
         {/* TODO: Put a photo of myself in the About Me section, that would solve the design for bigger screens */}
-        <h2 className="self-center text-2xl font-bold lg:text-3xl">About Me</h2>
+        <h2 className="self-center text-2xl font-bold md:text-3xl">About Me</h2>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4 text-pretty font-semibold">
             <h4 className="text-xl lg:text-2xl">Hey, I'm Valentin!</h4>

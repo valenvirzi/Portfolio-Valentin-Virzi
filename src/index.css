@@ -12,66 +12,6 @@
   font-style: normal;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  hanging-punctuation: first last;
-}
-
-body {
-  min-height: 100svh;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-img {
-  max-width: 15rem;
-}
-
-p {
-  line-height: 1.5rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-
-p,
-li {
-  max-width: var(--p-max-width, 65ch);
-  text-wrap: pretty;
-}
-
 .app {
   font-family: "Lato", sans-serif;
 }

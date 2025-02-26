@@ -23,49 +23,63 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
   const projectList: Project[] = [
     {
       id: "1",
-      title: "Weather App",
+      title: "Climatic - Weather App",
       description:
-        "A web app that displays real-time weather information using OpenWeather API.",
+        "A web app that has nothing to envy from real weather apps. I use it myself to get the latest forecast info.",
+      techStack: [
+        {
+          name: "TypeScript",
+          svgURL: "typescript",
+        },
+        {
+          name: "ReactJs",
+          svgURL: "react",
+        },
+        {
+          name: "Tailwind CSS",
+          svgURL: "tailwind",
+        },
+      ],
       imgURL: "https://example.com/weather-app-image.jpg",
       githubLink: "https://github.com/username/weather-app",
       deployLink: "https://weather-app.example.com",
     },
-    {
-      id: "2",
-      title: "Task Manager",
-      description:
-        "A task management application with drag-and-drop functionality and a beautiful UI.",
-      imgURL: "https://example.com/task-manager-image.jpg",
-      githubLink: "https://github.com/username/task-manager",
-      deployLink: "https://task-manager.example.com",
-    },
-    {
-      id: "3",
-      title: "Recipe Finder",
-      description:
-        "An app that lets users search for recipes and save their favorites for easy access.",
-      imgURL: "https://example.com/recipe-finder-image.jpg",
-      githubLink: "https://github.com/username/recipe-finder",
-      deployLink: "https://recipe-finder.example.com",
-    },
-    {
-      id: "4",
-      title: "Crypto Tracker",
-      description:
-        "A sleek web application that provides real-time cryptocurrency prices, market trends, and a personalized watchlist.",
-      imgURL: "https://example.com/crypto-tracker-image.jpg",
-      githubLink: "https://github.com/username/crypto-tracker",
-      deployLink: "https://crypto-tracker.example.com",
-    },
-    {
-      id: "5",
-      title: "E-Commerce Store",
-      description:
-        "A fully functional e-commerce platform with product filtering, a shopping cart, and secure checkout integration.",
-      imgURL: "https://example.com/e-commerce-store-image.jpg",
-      githubLink: "https://github.com/username/e-commerce-store",
-      deployLink: "https://ecommerce-store.example.com",
-    },
+    // {
+    //   id: "2",
+    //   title: "Task Manager",
+    //   description:
+    //     "A task management application with drag-and-drop functionality and a beautiful UI.",
+    //   imgURL: "https://example.com/task-manager-image.jpg",
+    //   githubLink: "https://github.com/username/task-manager",
+    //   deployLink: "https://task-manager.example.com",
+    // },
+    // {
+    //   id: "3",
+    //   title: "Recipe Finder",
+    //   description:
+    //     "An app that lets users search for recipes and save their favorites for easy access.",
+    //   imgURL: "https://example.com/recipe-finder-image.jpg",
+    //   githubLink: "https://github.com/username/recipe-finder",
+    //   deployLink: "https://recipe-finder.example.com",
+    // },
+    // {
+    //   id: "4",
+    //   title: "Crypto Tracker",
+    //   description:
+    //     "A sleek web application that provides real-time cryptocurrency prices, market trends, and a personalized watchlist.",
+    //   imgURL: "https://example.com/crypto-tracker-image.jpg",
+    //   githubLink: "https://github.com/username/crypto-tracker",
+    //   deployLink: "https://crypto-tracker.example.com",
+    // },
+    // {
+    //   id: "5",
+    //   title: "E-Commerce Store",
+    //   description:
+    //     "A fully functional e-commerce platform with product filtering, a shopping cart, and secure checkout integration.",
+    //   imgURL: "https://example.com/e-commerce-store-image.jpg",
+    //   githubLink: "https://github.com/username/e-commerce-store",
+    //   deployLink: "https://ecommerce-store.example.com",
+    // },
   ];
   {
     /* TODO: Make the container fetch the project list from a database and then render each project. */
@@ -85,7 +99,9 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           </motion.div>
         ))}
       </div>
-      {renderAll ? (
+      {projectList.length < 4 ? (
+        <></>
+      ) : renderAll ? (
         <></>
       ) : (
         <div className="flex items-center justify-center">
