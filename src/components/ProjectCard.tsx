@@ -8,10 +8,9 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <article className="flex flex-col gap-3 overflow-hidden rounded bg-[#003049] pb-4 text-[#FDF0D5] shadow-[0px_3px_6px_0_rgba(0,0,0,0.35)] md:max-w-sm lg:max-w-xs">
-      <img
-        src="https://i.pinimg.com/736x/01/c3/3b/01c33b9fa7c038b0710530ee2019d5ee.jpg"
-        alt=""
-      />
+      <div className="bg-black p-4">
+        <img className="rounded" src={project.imgURL} alt="" />
+      </div>
       <div className="flex h-full flex-col justify-between gap-4">
         <div className="flex flex-wrap justify-center gap-2 px-4 *:lg:p-2 *:lg:text-base *:xl:px-2">
           {project.techStack.map((tech) => {
