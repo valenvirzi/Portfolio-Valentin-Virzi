@@ -38,6 +38,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
           <hr className="ml-10 h-px w-1/12 bg-[#FDF0D5]" />
           <li className="flex">
             <a
+              onClick={() => setIsMenuOpen(false)}
               className="w-full p-4 pl-10"
               href="https://drive.google.com/file/d/1Iiors2L5HU9xHhLC5d0DhUeQzdpsFS0K/view"
               target="_blank"
@@ -48,7 +49,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
           </li>
           <hr className="ml-10 h-px w-1/12 bg-[#FDF0D5]" />
           <li className="flex">
-            <a className="w-full p-4 pl-10" href="#contact">
+            <a
+              onClick={() => setIsMenuOpen(false)}
+              className="w-full p-4 pl-10"
+              href="#contact"
+            >
               Contact
             </a>
           </li>
