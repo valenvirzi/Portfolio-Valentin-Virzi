@@ -57,7 +57,6 @@ const NavBar: React.FC = () => {
         </li>
         <hr className="h-4 w-px bg-[#FDF0D5]" />
         <li>
-          {/* TODO: Make contact link work on all subpages. Right now it only works on the Home Page */}
           <a className="group relative p-3" href="#contact">
             Contact
             <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />

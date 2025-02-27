@@ -11,8 +11,7 @@ export default function HomePage() {
           <h1 className="text-3xl font-semibold lg:text-5xl 2xl:text-7xl">
             VALENTIN VIRZI
           </h1>
-          {/* TODO: Make the "and more" text be a link to the about section where I list my tech stack. */}
-          <p className="text-base lg:text-lg 2xl:text-xl">
+          <p className="text-base md:w-4/5 lg:w-2/3 lg:text-lg xl:w-2/5 2xl:text-xl">
             Frontend Developer proficient in ReactJS, TypeScript and tools such
             as Tailwind, Git{" "}
             <a className="underline underline-offset-4" href="#skills">
@@ -58,11 +57,10 @@ export default function HomePage() {
         </div>
       </section>
       <section className="flex flex-col gap-6 bg-[#669BBC] px-6 py-6 text-[#FDF0D5] lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
-        {/* TODO: Design this section for bigger screens */}
         {/* TODO: Put a photo of myself in the About Me section, that would solve the design for bigger screens */}
         <h2 className="self-center text-2xl font-bold md:text-3xl">About Me</h2>
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-4 text-pretty font-semibold">
+        <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col gap-4 text-pretty xl:w-2/5">
             <h4 className="text-xl lg:text-2xl">Hey, I'm Valentin!</h4>
             <p className="lg:text-lg">
               I crossed paths with the world of coding thanks to my
