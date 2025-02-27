@@ -22,7 +22,7 @@ const NavBar: React.FC = () => {
       <button className="z-50 xl:hidden" type="button">
         <Hamburger rounded toggled={isMenuOpen} onToggle={handleToggleMenu} />
       </button>
-      <Sidebar isMenuOpen={isMenuOpen} />
+      <Sidebar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       {isMenuOpen && (
         <div
           onPointerDown={handleToggleMenu}
@@ -31,22 +31,14 @@ const NavBar: React.FC = () => {
       )}
       <ul className="hidden items-center gap-4 xl:flex 2xl:text-lg">
         <li>
-          <NavLink
-            onPointerDown={() => setIsMenuOpen(false)}
-            className="group relative p-3"
-            to="/"
-          >
+          <NavLink className="group relative p-3" to="/">
             Home
             <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />
           </NavLink>
         </li>
         <hr className="h-4 w-px bg-[#FDF0D5]" />
         <li>
-          <NavLink
-            onPointerDown={() => setIsMenuOpen(false)}
-            className="group relative p-3"
-            to="/projects"
-          >
+          <NavLink className="group relative p-3" to="/projects">
             Projects
             <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />
           </NavLink>

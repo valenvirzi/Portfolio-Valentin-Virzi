@@ -2,9 +2,10 @@ import { NavLink } from "react-router-dom";
 
 interface SidebarProps {
   isMenuOpen: boolean;
+  setIsMenuOpen: (boolean: boolean) => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen }) => {
+const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
   return (
     <div
       className={`fixed inset-y-0 right-0 transform xl:hidden ${
@@ -16,13 +17,21 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen }) => {
       <nav className="mt-20">
         <ul className="flex flex-col gap-1">
           <li className="flex">
-            <NavLink className="w-full p-4 pl-10" to={`/`}>
+            <NavLink
+              onClick={() => setIsMenuOpen(false)}
+              className="w-full p-4 pl-10"
+              to={`/`}
+            >
               Home
             </NavLink>
           </li>
           <hr className="ml-10 h-px w-1/12 bg-[#FDF0D5]" />
           <li className="flex">
-            <NavLink className="w-full p-4 pl-10" to={`/projects`}>
+            <NavLink
+              onClick={() => setIsMenuOpen(false)}
+              className="w-full p-4 pl-10"
+              to={`/projects`}
+            >
               Projects
             </NavLink>
           </li>
