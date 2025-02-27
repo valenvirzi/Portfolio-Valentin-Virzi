@@ -31,14 +31,22 @@ const NavBar: React.FC = () => {
       )}
       <ul className="hidden items-center gap-4 xl:flex 2xl:text-lg">
         <li>
-          <NavLink className="group relative p-3" to="/">
+          <NavLink
+            onPointerDown={() => setIsMenuOpen(false)}
+            className="group relative p-3"
+            to="/"
+          >
             Home
             <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />
           </NavLink>
         </li>
         <hr className="h-4 w-px bg-[#FDF0D5]" />
         <li>
-          <NavLink className="group relative p-3" to="/projects">
+          <NavLink
+            onPointerDown={() => setIsMenuOpen(false)}
+            className="group relative p-3"
+            to="/projects"
+          >
             Projects
             <span className="absolute bottom-[-1px] left-0 h-[2px] w-full scale-x-0 transform bg-[#FDF0D5] transition-transform duration-300 group-hover:scale-x-100" />
           </NavLink>

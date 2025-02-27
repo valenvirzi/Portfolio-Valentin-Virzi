@@ -5,7 +5,7 @@ import SkillsContainer from "../components/SkillsContainer";
 export default function HomePage() {
   return (
     <main className="flex flex-col">
-      <section className="relative bg-black bg-[url('./code.avif')] bg-cover bg-no-repeat px-6 py-6 text-[#FDF0D5] md:bg-contain md:bg-right-top lg:px-8 lg:py-10 xl:px-12 2xl:px-14 2xl:py-10">
+      <section className="relative bg-black bg-[url('./img/code.avif')] bg-cover bg-no-repeat px-6 py-6 text-[#FDF0D5] md:bg-contain md:bg-right-top lg:px-8 lg:py-10 xl:px-12 2xl:px-14 2xl:py-10">
         <div className="absolute inset-0 bg-[#003049] opacity-75"></div>
         <div className="relative z-10 flex flex-col gap-4 lg:gap-6 2xl:gap-10">
           <h1 className="text-3xl font-semibold lg:text-5xl 2xl:text-7xl">
