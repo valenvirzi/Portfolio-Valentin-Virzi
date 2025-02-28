@@ -40,7 +40,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           svgURL: "tailwind",
         },
       ],
-      imgURL: "https://i.postimg.cc/7ZSbF1mc/image-2025-02-27-101934619.png",
+      imgURL: "https://i.postimg.cc/cHV9knLf/image-2025-02-28-195106993.png",
       githubLink: "https://github.com/valenvirzi/weather-app",
       deployLink: "https://weather-app-valentin-virzi.vercel.app",
     },
