@@ -40,7 +40,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
             <a
               onClick={() => setIsMenuOpen(false)}
               className="w-full p-4 pl-10"
-              href="https://drive.google.com/file/d/1Iiors2L5HU9xHhLC5d0DhUeQzdpsFS0K/view"
+              href="https://drive.google.com/file/d/1qr30gxkmzNNj03SeGhQWIzWkxsejyweY/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

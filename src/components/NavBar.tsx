@@ -47,7 +47,7 @@ const NavBar: React.FC = () => {
         <li>
           <a
             className="group relative p-3"
-            href="https://drive.google.com/file/d/1Iiors2L5HU9xHhLC5d0DhUeQzdpsFS0K/view"
+            href="https://drive.google.com/file/d/1qr30gxkmzNNj03SeGhQWIzWkxsejyweY/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
