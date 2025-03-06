@@ -25,7 +25,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
       id: "1",
       title: "Climatic - Weather App",
       description:
-        "A web app that has nothing to envy from real weather apps. I use it myself to get the latest forecast info.",
+        "An intuitive weather app that provides real-time weather updates, a 5-day forecast, and location-based data.",
       techStack: [
         {
           name: "TypeScript",
