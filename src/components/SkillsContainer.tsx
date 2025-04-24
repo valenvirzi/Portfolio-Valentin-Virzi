@@ -4,27 +4,32 @@ import SkillCard from "./SkillCard";
 const SkillsContainer: React.FC = () => {
   const skillsList: Skill[] = [
     {
-      id: "3",
+      id: "0",
       name: "JavaScript",
       svgURL: "javascript",
     },
     {
-      id: "4",
+      id: "1",
       name: "TypeScript",
       svgURL: "typescript",
     },
     {
-      id: "5",
-      name: "ReactJs",
+      id: "2",
+      name: "React JS",
       svgURL: "react",
     },
     {
-      id: "1",
+      id: "3",
+      name: "Node JS",
+      svgURL: "nodeJs",
+    },
+    {
+      id: "4",
       name: "HTML",
       svgURL: "html",
     },
     {
-      id: "2",
+      id: "5",
       name: "CSS",
       svgURL: "css",
     },
@@ -40,11 +45,16 @@ const SkillsContainer: React.FC = () => {
     },
     {
       id: "8",
+      name: "Zustand",
+      svgURL: "zustand",
+    },
+    {
+      id: "9",
       name: "Bootstrap",
       svgURL: "bootstrap",
     },
     {
-      id: "9",
+      id: "10",
       name: "SASS",
       svgURL: "sass",
     },
