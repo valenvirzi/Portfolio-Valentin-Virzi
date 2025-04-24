@@ -72,7 +72,7 @@ export default function HomePage() {
             <p className="lg:text-lg">
               In addition to academics, I earned my{" "}
               <a
-                className="underline underline-offset-4"
+                className="underline underline-offset-4 hover:text-[#C1121F]"
                 href="https://drive.google.com/file/d/1FjKJgEM2m_mlG9ZJx5mduKFYpt4N1Q6E/view"
                 target="_blank"
                 rel="noopener noreferrer"
