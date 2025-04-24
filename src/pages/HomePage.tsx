@@ -63,28 +63,42 @@ export default function HomePage() {
           <div className="flex flex-col gap-4 text-pretty xl:w-2/5">
             <h4 className="text-xl lg:text-2xl">Hey, I'm Valentin!</h4>
             <p className="lg:text-lg">
-              I crossed paths with the world of coding thanks to my
-              tech-enthusiast friends. Once I started making my own apps, I got
-              hooked! The amount of cool stuff one can create with just a bit of
-              code completely blew my mind.
+              Since I was a child, I've been passionate about solving logical
+              challenges. I still remember when my aunt introduced me to Sudoku
+              at age 8, it sparked a love for problem-solving that's stuck with
+              me ever since. By 15, I was competing in school math contests and
+              even reached the state level.
             </p>
             <p className="lg:text-lg">
-              I have always been all about learning new things. That's why,
-              besides being certified in personal training and studying Web
-              Development at college, I've been also brushing up on my English
-              since I was a little kid. Bagged a{" "}
+              In addition to academics, I earned my{" "}
               <a
                 className="underline underline-offset-4"
                 href="https://drive.google.com/file/d/1FjKJgEM2m_mlG9ZJx5mduKFYpt4N1Q6E/view"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Cambridge B2 certificate
-              </a>{" "}
-              along the way to prove it!
+                First Certificate in English
+              </a>
+              , which helped me broaden my communication skills and opened new
+              opportunities for growth and learning.
             </p>
             <p className="lg:text-lg">
-              Hope I can join you soon and start building great things together!
+              After high school, I pursued a certification as a Personal Trainer
+              and enjoyed helping others improve themselves. But eventually, I
+              felt like I had hit a ceiling, I craved a new challenge. That's
+              when a teacher introduced me to programming, and I was instantly
+              hooked.
+            </p>
+            <p className="lg:text-lg">
+              While working my day job delivering fish, I began teaching myself
+              to code. In 2024, I decided to fully commit to this new path. I
+              enrolled in the Web Development program at the University of La
+              Matanza, and I'm now focused on building a career in software
+              development.
+            </p>
+            <p className="lg:text-lg">
+              I'm excited to keep learning, growing, and solving new problems,
+              this time with code.
             </p>
           </div>
         </div>
