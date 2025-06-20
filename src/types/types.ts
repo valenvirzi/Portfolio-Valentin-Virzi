@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   techStack: Skill[];
   imgURL: string;
+  icon: string;
   githubLink: string;
   deployLink: string | undefined;
 }

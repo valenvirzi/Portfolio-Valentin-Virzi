@@ -22,7 +22,35 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
 
   const projectList: Project[] = [
     {
-      id: "1",
+      id: "project1",
+      title: "LoadUp - Gym App",
+      description:
+        "A workout companion app that tracks your weightlifting progress over time and displays it graphically.",
+      techStack: [
+        {
+          name: "TypeScript",
+          svgURL: "typescript",
+        },
+        {
+          name: "ReactJs",
+          svgURL: "react",
+        },
+        {
+          name: "Tailwind CSS",
+          svgURL: "tailwind",
+        },
+        {
+          name: "Zustand",
+          svgURL: "zustand",
+        },
+      ],
+      imgURL: "https://i.postimg.cc/cHV9knLf/image-2025-02-28-195106993.png",
+      icon: "https://www.svgrepo.com/show/475554/gym.svg",
+      githubLink: "https://github.com/valenvirzi/Load-Up/",
+      deployLink: "https://load-up-valentin-virzi.vercel.app/",
+    },
+    {
+      id: "project2",
       title: "Climatic - Weather App",
       description:
         "An intuitive weather app that provides real-time weather updates, a 5-day forecast, and location-based data.",
@@ -41,6 +69,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
         },
       ],
       imgURL: "https://i.postimg.cc/cHV9knLf/image-2025-02-28-195106993.png",
+      icon: "https://www.svgrepo.com/show/530233/weather.svg",
       githubLink: "https://github.com/valenvirzi/weather-app",
       deployLink: "https://weather-app-valentin-virzi.vercel.app",
     },

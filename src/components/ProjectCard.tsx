@@ -18,7 +18,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           })}
         </div>
         <div className="flex flex-col gap-4 px-4">
-          <h3 className="text-xl font-semibold xl:text-xl">{project.title}</h3>
+          <div className="flex items-center gap-2">
+            <img className="w-8" src={project.icon} alt="app icon" />
+            <h3 className="text-xl font-semibold xl:text-xl">
+              {project.title}
+            </h3>
+          </div>
           <p>{project.description}</p>
         </div>
         <div className="flex items-center justify-between gap-2 px-4 text-sm 2xl:text-base">
