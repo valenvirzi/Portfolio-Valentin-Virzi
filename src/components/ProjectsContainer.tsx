@@ -44,6 +44,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           svgURL: "zustand",
         },
       ],
+      // TODO: Create and Update the IMG for the project
       imgURL: "https://i.postimg.cc/cHV9knLf/image-2025-02-28-195106993.png",
       icon: "https://www.svgrepo.com/show/475554/gym.svg",
       githubLink: "https://github.com/valenvirzi/Load-Up/",
