@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-//TODO: Desgin and style Not Found Page
 export default function NotFoundPage() {
   return (
     <main className="flex min-h-screen flex-grow flex-col items-center justify-evenly gap-8 bg-[#669BBC] px-6 py-8">

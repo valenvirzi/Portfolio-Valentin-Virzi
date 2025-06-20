@@ -57,7 +57,6 @@ export default function HomePage() {
         </div>
       </section>
       <section className="flex flex-col gap-6 bg-[#669BBC] px-6 py-6 text-[#FDF0D5] lg:px-8 lg:py-10 xl:px-12 2xl:px-14">
-        {/* TODO: Put a photo of myself in the About Me section, that would solve the design for bigger screens */}
         <h2 className="self-center text-2xl font-bold md:text-3xl">About Me</h2>
         <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col gap-4 text-pretty xl:w-2/5">
