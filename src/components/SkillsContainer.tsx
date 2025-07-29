@@ -40,26 +40,31 @@ const SkillsContainer: React.FC = () => {
     },
     {
       id: "skill7",
+      name: "Vite.js",
+      svgURL: "vite",
+    },
+    {
+      id: "skill8",
       name: "Java",
       svgURL: "java",
     },
     {
-      id: "skill8",
+      id: "skill9",
       name: "Git",
       svgURL: "git",
     },
     {
-      id: "skill9",
+      id: "skill10",
       name: "Zustand",
       svgURL: "zustand",
     },
     {
-      id: "skill10",
+      id: "skill11",
       name: "Bootstrap",
       svgURL: "bootstrap",
     },
     {
-      id: "skill11",
+      id: "skill12",
       name: "SASS",
       svgURL: "sass",
     },
