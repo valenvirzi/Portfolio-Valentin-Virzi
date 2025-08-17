@@ -17,32 +17,34 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             return <SkillCard skill={tech} key={tech.name} />;
           })}
         </div>
-        <div className="flex flex-col gap-4 px-4">
-          <div className="flex items-center gap-2">
-            <img className="w-8" src={project.icon} alt="app icon" />
-            <h3 className="text-xl font-semibold xl:text-xl">
-              {project.title}
-            </h3>
+        <div className="">
+          <div className="flex flex-col gap-4 px-4">
+            <div className="flex items-center gap-2">
+              <img className="w-8" src={project.icon} alt="app icon" />
+              <h3 className="text-xl font-semibold xl:text-xl">
+                {project.title}
+              </h3>
+            </div>
+            <p>{project.description}</p>
           </div>
-          <p>{project.description}</p>
-        </div>
-        <div className="flex items-center justify-between gap-2 px-4 text-sm 2xl:text-base">
-          <a
-            className="rounded bg-[#C1121F] px-3 py-2 text-[#FDF0D5] hover:bg-[#780000] md:px-4"
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub Code
-          </a>
-          <a
-            className="rounded bg-[#780000] px-3 py-2 text-[#FDF0D5] hover:bg-[#C1121F] md:px-4"
-            href={project.deployLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Deploy
-          </a>
+          <div className="flex items-center justify-between gap-2 px-4 text-sm 2xl:text-base">
+            <a
+              className="rounded bg-[#C1121F] px-3 py-2 text-[#FDF0D5] hover:bg-[#780000] md:px-4"
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Code
+            </a>
+            <a
+              className="rounded bg-[#780000] px-3 py-2 text-[#FDF0D5] hover:bg-[#C1121F] md:px-4"
+              href={project.deployLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Deploy
+            </a>
+          </div>
         </div>
       </div>
     </article>

@@ -32,7 +32,7 @@ export default function HomePage() {
             </Link>
             <a
               className="rounded bg-[#780000] px-6 py-3 text-center text-[#FDF0D5] hover:bg-[#C1121F] max-md:w-full lg:px-8"
-              href="https://drive.google.com/file/d/1qr30gxkmzNNj03SeGhQWIzWkxsejyweY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1X680vzqhs7t1ATVeFg_QICwQ6otKQqJl/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
