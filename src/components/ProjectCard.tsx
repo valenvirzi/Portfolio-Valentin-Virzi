@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             return <SkillCard skill={tech} key={tech.name} />;
           })}
         </div>
-        <div className="">
+        <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4 px-4">
             <div className="flex items-center gap-2">
               <img className="w-8" src={project.icon} alt="app icon" />
